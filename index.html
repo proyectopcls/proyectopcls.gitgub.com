@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Potencia</title>
+        <title>Raiz Cuadrada</title>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            html{font-family: sans-serif; text-align: center}
-            body{display: inline-block; text-align: left}
-            input[type="number"]{text-align: right}
-            footer{font-size: small}
-        </style>
+        <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <header>
-            <h1>Potencia de un Número</h1>
+            <h1>Raiz Cuadrada</h1>
         </header>
-            <form id="forma" action="javascript:;">
-                <p>
-                    <label accesskey="C">
-                        Ingresa un Número:
-                        <input name="base" type="number" required
-                         min="1">
-                        <input type="submit" value="Generar" accesskey="G">
-                        <input type="reset" value="Limpiar">
-                    </label>
-                </p>
-                <p>
-                    <textarea name="salidaP" rows="12" cols="40"></textarea>
+       <form id="forma" action="javascript:;">
+        <p>
+        <label accesskey="T">
+        Número:
+        <input name="base" type="number" min="1" required>
+        <input type="submit" value="Generar" accesskey="G">
+        <input type="reset" value="Limpiar">
+        </label>
+        </p>
+        <p>
+          <textarea name="resulP" rows="12" cols="30"> </textarea>
                 </p>
             </form>
         <footer>
             <center> Copyright 2021 | Cristina León Salmerón</center>
         </footer>
-        <script src="js/ctrlP.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
